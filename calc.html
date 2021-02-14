@@ -8,29 +8,29 @@
     <title>Calculadora JS</title>
 </head>
 
-<body onload="a()">
-    <div><br>
+<body">
+    <div id="mom"><br>
         <input class="input" type="text" id="result" name="result" maxlength="8" readonly><br>
-        <button class="button">C</button>
-        <button class="button">AC</button>
-        <button class="button">%</button>
-        <button class="button">◄</button><br>
-        <button class="button">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">X</button><br>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">-</button><br>
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">+</button><br>
-        <button class="button">+/-</button>
-        <button class="button">0</button>
-        <button class="button">,</button>
-        <button class="button">=</button>
+        <button class="button" id="actioner" onclick="clicker(this)">C</button>
+        <button class="button" id="actioner" onclick="clicker(this)">AC</button>
+        <button class="button" id="actioner" onclick="clicker(this)">%</button>
+        <button class="button" id="actioner" onclick="clicker(this)">◄</button><br>
+        <button class="button" id="char" value="7" onclick="clicker(this)">7</button>
+        <button class="button" id="char" value="8" onclick="clicker(this)">8</button>
+        <button class="button" id="char" value="9" onclick="clicker(this)">9</button>
+        <button class="button" id="actioner" onclick="clicker(this)">X</button><br>
+        <button class="button" id="char" value="4" onclick="clicker(this)">4</button>
+        <button class="button" id="char" value="5" onclick="clicker(this)">5</button>
+        <button class="button" id="char" value="6" onclick="clicker(this)">6</button>
+        <button class="button" id="actioner" onclick="clicker(this)">-</button><br>
+        <button class="button" id="char" value="1" onclick="clicker(this)">1</button>
+        <button class="button" id="char" value="2" onclick="clicker(this)">2</button>
+        <button class="button" id="char" value="3" onclick="clicker(this)">3</button>
+        <button class="button" id="actioner" value="+" onclick="clicker(this)">+</button><br>
+        <button class="button" id="actioner" onclick="clicker(this)">+/-</button>
+        <button class="button" id="char" value="0" onclick="clicker(this)">0</button>
+        <button class="button" id="char" value="," onclick="clicker(this)">,</button>
+        <button class="button" id="resultFinal" onclick="clicker(this)">=</button>
     </div>
 </body>
 
