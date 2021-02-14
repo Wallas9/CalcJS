@@ -1,0 +1,30 @@
+.button{
+    position: relative;
+    background-color: black;
+    font-size: 80px;
+    padding: auto;
+    border: 2px solid green;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    outline: none;
+    width: 150px;
+    
+}
+.button:hover{
+    background-color: green; 
+    color: white;  
+}
+.button:active{
+    background-color: black;
+}
+
+.input{
+    text-align: right;
+    background-color: black;
+    font-size: 80px;
+    border: 2px solid green;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    outline: none;
+    width: 600px;
+}
