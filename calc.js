@@ -1,10 +1,21 @@
 
 const clicker = (element) => {
     let result = document.getElementById("result");
+
     if (result.value == "0" || result.value == "Syntax error") {
-        result.value = element.textContent;
+
+        if (element.textContent == ",") {
+
+            result.value += element.textContent;
+        }
+
+        else {
+            
+            result.value = element.textContent;
+        }
     }
     else {
+
         result.value += element.textContent;
     }
 }
@@ -23,9 +34,11 @@ const res = () => {
     try {
         let result = document.getElementById("result");
         if (result.value != "") {
-            let calc = eval(result.value);
-            result.value = calc;
+            let equation = result.value;
+            let calc = equation.replaceAll(",", ".");
+            result.value = eval(calc);
         }
+
     }
     catch (err) {
         result.value = "Syntax error";
